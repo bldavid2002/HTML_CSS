@@ -1,0 +1,68 @@
+
+:root{
+   --border-color: black;
+   --number-color: lightskyblue;
+   --water-color: lightblue;
+}
+
+
+body{
+    border: thin solid var(--border-color);
+    padding: 1em;
+    padding-bottom: 2em;
+}
+table.table{
+   border-collapse: collapse;
+    margin: auto;
+    
+    text-align: center;
+}
+
+
+
+table.table th ,td {
+    width: 2em;
+    height: 2em;
+}
+
+table>tbody td{
+    border: thin solid var(--border-color);
+}
+ table.table>tfoot td{
+    border-top: thick solid var(--border-color);
+ }
+ table.table>thead td{
+    border-bottom: thick solid var(--border-color);
+ }
+ table.table>tbody>tr :first-child{
+    border-right: thick solid var(--border-color);
+ }
+ table.table>tbody>tr :last-child{
+    border-left: thick solid var(--border-color);
+ }
+
+ table.table>thead>tr>td ,table.table>tbody>tr>th , table.table>tfoot>tr>td{
+   color: var(--number-color);
+   font-weight: normal;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .top{
+    border-top: thick solid var(--border-color);
+ }
+ .bottom{
+    border-bottom: thick solid var(--border-color);
+ }
+ .right{
+    border-right: thick solid var(--border-color);
+ }
+ .left{
+    border-left: thick solid var(--border-color);
+ }
+ .blue{
+    background-color: var(--water-color);
+ }
+
+ h1#title, h2#rule, div#szoveg{
+    font-family: Arial, Helvetica, sans-serif;
+ }

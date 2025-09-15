@@ -1,0 +1,142 @@
+:root {
+    --cell-size: 10vh;
+    --path-color: #A45A52;
+    --door-color: grey;
+    --special-door: gold;
+    --boder-color: black;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin: 1em auto;
+    background-color: var(--boder-color);    
+}
+
+table>th {
+    font-weight: normal;
+}
+
+
+table>tbody>tr:nth-child(odd)>td:nth-of-type(odd){
+    background-color: var(--path-color);
+
+}
+
+table>tbody>tr:nth-child(odd)>td:nth-of-type(even){
+    background-color: var(--path-color);
+
+}
+
+table>tbody>tr:nth-child(even)>td:nth-of-type(odd){
+    background-color: var(--path-color);
+
+}
+
+
+table>tbody>tr:nth-child(even)>td:nth-of-type(even){
+    background-color: var(--path-color);
+
+}
+
+table>tbody>tr:nth-child(odd)>td:nth-of-type(5){
+    background-color: var(--door-color);
+
+}
+
+table>tbody>tr:nth-child(even)>td:nth-of-type(5){
+    background-color: var(--door-color);
+
+}
+
+table>tbody>tr:nth-child(5)>td:nth-of-type(5){
+    background-color: var(--path-color);
+}
+table>tbody>tr:nth-child(1)>td:nth-of-type(3){
+    background-color: var(--special-door);
+    
+}
+
+table td,table th {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--path-color);
+    background-color: var(--boder-color);
+}
+
+table >thead{
+    
+    background-color: var(--border-color);
+}
+
+
+table >tfoot{
+    
+    background-color: var(--border-color);
+}
+
+table >tbody{
+    
+    background-color: var(--border-color);
+    
+}
+
+table >tbody{
+    background-color: var(--border-color);
+    
+    
+}
+table>tbody>tr:nth-child(7)>td:nth-of-type(7)::before{
+    content: "👻";
+    font-size: 3em;
+}
+
+table>tbody>tr:nth-child(5)>td:nth-of-type(8)::before{
+    content: "🧛‍♀️";
+    font-size: 3em;
+}
+
+table>tbody>tr:nth-child(2)>td:nth-of-type(6)::before{
+    content: "🧛‍♀️";
+    font-size: 3em;
+}
+
+
+table>tbody>tr:nth-child(8)>td:nth-of-type(3)::before{
+    content: "🗡";
+    font-size: 3em;
+}
+
+table>tbody>tr:nth-child(5)>td:nth-of-type(5)::before{
+    content: "🚪";
+    font-size: 3em;
+}
+
+table>tbody>tr:nth-child(1)>td:nth-of-type(1)::before{
+    content: "🎃";
+    font-size: 3em;
+}
+table>tbody>tr:nth-child(8)>td:nth-of-type(1)::before{
+    content: "🎃";
+    font-size: 3em;
+}
+
+table>tbody>tr:nth-child(1)>td:nth-of-type(3)::before{
+    content: "🧙‍♂️";
+    font-size: 3em;
+    
+}
+
+table>tbody>tr:nth-child(8)>td:nth-of-type(4)::before{
+    content: "🐺";
+    font-size: 3em;
+    
+}
+
+@media(max-width: 600px){
+    :root{
+        --cell-size: 15vw
+    }
+}
