@@ -1,0 +1,85 @@
+body {
+    background-color: lightblue;
+}
+
+.card {
+    background-color: white;
+    width: 2.5in;
+    height: 3.5in;
+    margin: 1em;
+    border: medium solid black;
+    border-radius: 0.5em;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.card[data-rank=A] span.rank::before {
+    content: "A";
+}
+.card[data-rank=J] span.rank::before {
+    content: "J";
+}
+.card[data-rank=Q] span.rank::before {
+    content: "Q";
+}
+.card[data-rank=K] span.rank::before {
+    content: "K";
+}
+
+.card[data-suit=spades] span.suit::before {
+    content: "\2660";
+}
+
+.card[data-suit=clubs] span.suit::before {
+    content: "\2663";
+}
+
+.card[data-suit=hearts] span.suit::before {
+    content: "\2665";
+}
+
+.card[data-suit=diamonds] span.suit::before {
+    content: "\2666";
+}
+
+.card:is([data-suit=clubs], [data-suit=spades]) {
+    color: black;
+}
+
+.card:is([data-suit=diamonds], [data-suit=hearts]) {
+    color: red;
+}
+
+.card :is(.topLeft, .bottomRight) {
+    display: inline-block;
+    padding: 0.25em;
+    font-size: 200%;
+    text-align: center;
+}
+
+.card .center {
+    font-size: 400%;
+}
+
+.card[data-rank=J] .center {
+    background: url("images/jumbo.jpg") center/contain no-repeat;
+    font-size: 0;
+    width:80%;
+    height:80%;
+}
+.card[data-rank=Q] .center {
+    background: url("images/dama.jpg") center/contain no-repeat;
+    font-size: 0;
+     width:80%;
+    height:80%;
+}
+.card[data-rank=K] .center {
+    background: url("images/kiraly.jpg") center/contain no-repeat;
+    font-size: 0;
+    width:80%;
+    height:80%;
+}
+
+.card .bottomRight {
+    transform: rotate(180deg);
+}
