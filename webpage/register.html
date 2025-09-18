@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Web Shop</title>
+  <link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">WebShop</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <h1>Create an Account</h1>
+  <form class="form-container">
+    <input type="text" placeholder="Full Name" required>
+    <input type="date" placeholder="Birth Date" required>
+    
+     <select required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+     </select>
+
+    <input type="email" placeholder="Email Address" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Confirm Password" required>
+    <button type="submit">Register</button>
+    <a href="login.html">Already have an account? Login</a>
+  </form>
+
+  <footer class="footer">
+    <p>register page footer</p>
+  </footer>
+
+</body>
+</html>
